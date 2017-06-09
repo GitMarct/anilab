@@ -1,0 +1,64 @@
+a, p, li {
+font-family: 'Open Sans', sans-serif;
+}
+ strong, b {
+ font-weight:bold;
+ }
+ 
+p {
+	color:#000000;
+	font-size:150%;
+	text-align:center;
+	
+}
+a:link {
+  color:#000000;
+  text-decoration:none;
+}
+a:hover {
+  color:#777777;
+  text-decoration:none;
+}
+a:active {
+  color:#999999;
+  text-decoration:none;
+}
+a:visited {
+  color:#660000;
+  text-decoration:none;
+}
+
+.evil{
+font-family: 'Permanent Marker', sans-serif;
+color:#660000;
+font-size:300%;
+padding:20px;
+}
+h1, .nav-ish {
+font-family: 'Oswald', sans-serif;
+}
+
+h3, h4 {
+font-family: 'Oswald', sans-serif;
+text-align:center;
+}
+
+.nav{
+font-size:75%;
+}
+
+#wrapper {
+	 width: 900px;
+	 background-color:rgba(253, 79, 87, 0.2);
+	 margin:auto;
+}
+
+a {
+ text-align:center;
+}
+.menu {
+height:150px;
+width:150px;
+ margin: auto;
+ /*padding:10px;*/
+}
