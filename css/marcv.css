@@ -1,4 +1,4 @@
-a, p, li {
+a, p, li, .note{
 font-family: 'Open Sans', sans-serif;
 }
  strong, b {
@@ -28,12 +28,44 @@ a:visited {
   text-decoration:none;
 }
 
-.evil{
+.clear{
+opacity:0.5;
+}
+.location {
+color:#660000;
+}
+.note{
+font-size:50%;
+}
+
+.evil, #evil-burst{
 font-family: 'Permanent Marker', sans-serif;
 color:#660000;
-font-size:300%;
+font-size:200%;
 padding:20px;
 }
+
+  span {
+  transition:all 0.5s;
+  display:inline-block;
+  }
+
+#evil-burst {
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all .5s; /* Safari */
+ 	transition: all .5s;
+  transition-delay:2s;
+  }
+
+#evil-burst:hover span{
+  color:#660000;
+  transform:rotate(3600deg);
+  display:inline-block;
+}
+}
+
+
 h1, .nav-ish {
 font-family: 'Oswald', sans-serif;
 }
