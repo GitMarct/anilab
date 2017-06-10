@@ -32,16 +32,29 @@ a:visited {
 opacity:0.5;
 }
 .location {
-color:#660000;
+color:#FF0000;
 }
-.note{
+.note,{
 font-size:50%;
 }
 
-.evil, #evil-burst{
+#evil-grow:hover {
+font-size:250%;
+}
+
+#evil-disguise:hover {
+color:black;
+font-size:200%;
+}
+
+#evil-note:hover {
+font-size:75%;
+}
+
+.evil, #evil-burst, #evil-note, #evil-grow, #evil-disguise {
 font-family: 'Permanent Marker', sans-serif;
 color:#660000;
-font-size:200%;
+font-size:150%;
 padding:20px;
 }
 
@@ -65,7 +78,44 @@ padding:20px;
   display:inline-block;
 }
 
+.bounce {
+position: relative;
 
+animation-name: bouncethat;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes bouncethat {
+0% {top:0px;}
+50% {top:-150px;}
+100% {top:0px;}
+}
+
+#tempor{
+color:transparent;
+}
+
+#tempor:hover{
+color:black;
+}
+
+#fade:hover{
+color:transparent;
+}
+
+
+@-webkit-keyframes rumble {
+    0% {-webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: translate(2px, 0px) rotate(-3deg);}
+    50% {-webkit-transform: translate(0px, -2px) rotate(0deg);}
+    75% {-webkit-transform: translate(-2px, 0px) rotate(3deg);}
+    100% {-webkit-transform: translate(0px, 2px) rotate(0deg);} 
+}
+
+.rumble, .rumble-hover:hover, .rumble-active:active {
+    -webkit-animation: rumble .0625s infinite linear}
 
 h1, .nav-ish {
 font-family: 'Oswald', sans-serif;
@@ -81,8 +131,7 @@ font-size:75%;
 }
 
 #wrapper {
-	 width: 900px;
-	 background-color:rgba(253, 79, 87, 0.2);
+	 width: 800px;
 	 margin:auto;
 }
 
