@@ -11,7 +11,20 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
 
   <title>Nikopol - Main Page</title>
+<style media="screen">
+      #zoetrope{
+        border:1px solid navy;
+        height:200px; width:200px;
+        margin: 2% auto;
+        background: url("rockon.png") 0 0;
+        animation: rockon .35s steps(4) infinite;
+        animation-play-state: running;
+      }
 
+      @keyframes rockon {
+        100%{background-position:800px;}
+      }
+    </style>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -20,7 +33,11 @@
 <body>
 <h1>Nikopol</h1>
   <div id="wrapper">
-<p>An interactive lyric website. Please hover over the text in accordance with the reference material provided by <a href="https://www.youtube.com/watch?v=bfazhyIe6mQ" target="_blank">clicking here.</a> </p>
+<p>An interactive lyric website. Please hover over the text in accordance with the reference material provided by 
+<a href="https://www.youtube.com/watch?v=bfazhyIe6mQ" target="_blank">clicking here.</a> Simply direct your cursor over
+the text from the center of the site and scroll downwards. </p>
+        <div id="zoetrope"></div>
+        <p>Get ready to rock!</p>
         </div>
          <nav class="menu"><hr>
 <p class="location">Nikopol</p>

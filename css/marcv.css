@@ -1,4 +1,4 @@
-a, p, li, .note{
+a, p, li, div,.note{
 font-family: 'Open Sans', sans-serif;
 }
  strong, b {
@@ -135,6 +135,17 @@ font-size:75%;
 	 width: 800px;
 	 margin:auto;
 }
+
+ #zoetrope {
+        height:200px; width:200px;
+        background: url("rockon.png") 0 0;
+        animation: rockon .25s steps(4) infinite;
+        animation-play-state: running;
+      }
+
+      @keyframes visionsclear {
+        100%{background-position:800px;}
+      }
 
 a {
  text-align:center;
