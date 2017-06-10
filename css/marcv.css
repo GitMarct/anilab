@@ -39,12 +39,13 @@ font-size:50%;
 }
 
 #evil-grow:hover {
-font-size:250%;
+font-size:350%;
 }
 
 #evil-disguise:hover {
 color:black;
 font-size:200%;
+transform:rotate(360deg);
 }
 
 #evil-note:hover {
